@@ -1,0 +1,69 @@
+# mount_point	fstype	device	device2		flags
+/cache		ext4	/dev/block/sda29	flags=backup=0;wipeingui
+/boot		emmc	/dev/block/sde41
+/data		ext4	/dev/block/sda31	flags=fileencryption=ice:aes-256-cts
+/system_root	ext4	/dev/block/sda23	flags=display="System";backup=0;wipeingui
+/system_image	emmc	/dev/block/sda23
+/vendor		ext4	/dev/block/sda22	flags=backup=0;wipeingui
+/vendor_image	emmc	/dev/block/sda22
+/storage	ext4	/data/media/0		flags=display="Internal Storage";usermrf;backup=1;fsflags="bind";removable
+/recovery	emmc	/dev/block/sda28	flags=display="Recovery";backup=1
+/modem_image	emmc	/dev/block/sde47	flags=backup=1;flashimg
+/cust		ext4	/dev/block/sda30	flags=backup=1
+/cust_image	emmc	/dev/block/sda30	flags=backup=0;flashimg
+/persist	ext4	/dev/block/sdf7		flags=backup=1
+/persist_image	emmc	/dev/block/sdf7		flags=flashimg
+/misc		emmc	/dev/block/sda11	flags=display="Misc";backup=1
+/efs1		emmc	/dev/block/sdf5		flags=backup=1;display="EFS"
+/efs2		emmc	/dev/block/sdf6		flags=backup=1;subpartitionof=/efs1
+/fsg		emmc	/dev/block/sdf1		flags=backup=1;subpartitionof=/efs1
+/fsc		emmc	/dev/block/sdf2		flags=backup=1;subpartitionof=/efs1
+/firmware	vfat	/dev/block/sde47	flags=display="Firmware";mounttodecrypt;fsflags=ro
+/bt_firmware	vfat	/dev/block/sde23	flags=display="Bluetooth";backup=1
+/bluetooth	emmc	/dev/block/sde23	flags=display="Bluetooth";flashimg=1
+/abl		emmc	/dev/block/sde28	flags=display="Firmware-update";backup=1
+/aop		emmc	/dev/block/sde14	flags=backup=1;subpartitionof=/abl
+/cmnlib		emmc	/dev/block/sde16	flags=backup=1;subpartitionof=/abl
+/cmnlib64	emmc	/dev/block/sde18	flags=backup=1;subpartitionof=/abl
+/devcfg		emmc	/dev/block/sde12	flags=backup=1;subpartitionof=/abl
+/qupfw		emmc	/dev/block/sde4		flags=backup=1;subpartitionof=/abl
+/keymaster	emmc	/dev/block/sde21	flags=backup=1;subpartitionof=/abl
+/logfs		emmc	/dev/block/sda14	flags=backup=1;subpartitionof=/abl
+/hyp		emmc	/dev/block/sde34	flags=backup=1;subpartitionof=/abl
+/xbl		emmc	/dev/block/sdb2		flags=backup=1;subpartitionof=/abl
+/xbl_config	emmc	/dev/block/sdb1		flags=backup=1;subpartitionof=/abl
+/storsec	emmc	/dev/block/sde9		flags=backup=1;subpartitionof=/abl
+/tz		emmc	/dev/block/sde30	flags=backup=1;subpartitionof=/abl
+/dsp		emmc	/dev/block/sde40	flags=backup=1;subpartitionof=/abl
+/vbmeta		emmc	/dev/block/sde8		flags=backup=1;display="Vbmeta";flashimg
+/dtbo		emmc	/dev/block/sde37	flags=display="DTBO";backup=1;flashimg
+/logo		emmc	/dev/block/sde39	flags=backup=1;display="Logo";flashimg
+# OEM
+/dip		emmc	/dev/block/sde24	flags=display="OEM";backup=1
+/ddr		emmc	/dev/block/sdd4		flags=backup=1;subpartitionof=/dip
+/apdp		emmc	/dev/block/sde6		flags=backup=1;subpartitionof=/dip
+/cdt		emmc	/dev/block/sdd2		flags=backup=1;subpartitionof=/dip
+/core_nhlos	emmc	/dev/block/sde46	flags=backup=1;subpartitionof=/dip
+/devinfo	emmc	/dev/block/sda17	flags=backup=1;subpartitionof=/dip
+/frp		emmc	/dev/block/sda9		flags=backup=1;subpartitionof=/dip
+/gsort		emmc	/dev/block/sde36	flags=backup=1;subpartitionof=/dip
+/ifaa		emmc	/dev/block/sde38	flags=backup=1;subpartitionof=/dip
+/imagefv	emmc	/dev/block/sda27	flags=backup=1;subpartitionof=/dip
+/keystore	emmc	/dev/block/sda8		flags=backup=1;subpartitionof=/dip
+/limits		emmc	/dev/block/sde2		flags=backup=1;subpartitionof=/dip
+/logdump	emmc	/dev/block/sda24	flags=backup=1;subpartitionof=/dip
+/minidump	emmc	/dev/block/sda25	flags=backup=1;subpartitionof=/dip
+/msadp		emmc	/dev/block/sde7		flags=backup=1;subpartitionof=/dip
+/oem_misc1	emmc	/dev/block/sda18	flags=backup=1;subpartitionof=/dip
+/oops		emmc	/dev/block/sda16	flags=backup=1;subpartitionof=/dip
+/rawdump	emmc	/dev/block/sda26	flags=backup=1;subpartitionof=/dip
+/sec		emmc	/dev/block/sde1		flags=backup=1;subpartitionof=/dip
+/splash		emmc	/dev/block/sda20	flags=backup=1;subpartitionof=/dip
+/spunvm		emmc	/dev/block/sde33	flags=backup=1;subpartitionof=/dip
+/ssd		emmc	/dev/block/sda2		flags=backup=1;subpartitionof=/dip
+/switch		emmc	/dev/block/sda1		flags=backup=1;subpartitionof=/dip
+/toolsfv	emmc	/dev/block/sde27	flags=backup=1;subpartitionof=/dip
+/vm-data	emmc	/dev/block/sda12	flags=backup=1;subpartitionof=/dip
+
+/external_sd	vfat	/dev/block/mmcblk0p1	/dev/block/mmcblk0	flags=fsflags=utf8;display="MicroSD card";storage;wipeingui;removable
+/usb-otg	vfat	/dev/block/sdg1	/dev/block/sdg	flags=fsflags=utf8;display="USB OTG";storage;wipeingui;removable
