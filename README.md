@@ -1,5 +1,7 @@
 ## TWRP device tree for Xiaomi CC9 / MI 9 Lite (Pyxis)
 
+## About Device
+
 Basic   | Spec Sheet
 -------:|:----------
 CPU     | Hexa-Core Kryo 360 Silver 1.7GHz
@@ -10,8 +12,8 @@ ROM     | 128GB
 RAM     | 6GB
 Android | 9.0
 Battery | 4030 mAh, Li-Po
-Display | 1080x2340 pixels, 6.39 AMOLED
-Rear Camera  | 48MP+8MP+2MP, AI Dual Camera
+Display | 1080x2340 pixels, 6.39" AMOLED
+Rear Camera  | 48MP+8MP+2MP, AI Camera
 Front Camera | 32MP
 
 ![Xiaomi MI 9 Lite](https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-mi-cc9-2.jpg "Xiaomi MI 9 Lite")
