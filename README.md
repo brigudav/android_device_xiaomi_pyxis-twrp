@@ -33,6 +33,10 @@ Works:
 - Android Pie and Q Support
 - Vibration support
 
+TO-DO:
+
+- DT2W support
+
 ## Compile
 
 First checkout minimal twrp with omnirom tree:
