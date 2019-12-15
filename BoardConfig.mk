@@ -131,7 +131,6 @@ TARGET_RECOVERY_QCOM_RTC_FIX := true
 
 # Use Toolbox instead of Busybox
 TW_USE_TOOLBOX := true
-#TW_USE_BUSYBOX := true
 
 # Display
 TARGET_SCREEN_WIDTH := 1080
@@ -139,13 +138,10 @@ TARGET_SCREEN_HEIGHT := 2340
 TW_THEME := portrait_hdpi
 TW_DEFAULT_BRIGHTNESS := 1200
 TW_MAX_BRIGHTNESS := 2047
-#TW_Y_OFFSET := 80
-#TW_H_OFFSET := -80
+TW_Y_OFFSET := 80
+TW_H_OFFSET := -80
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
-#TW_NO_SCREEN_BLANK := true
-#TW_SCREEN_BLANK_ON_BOOT := true
-#TW_NO_SCREEN_TIMEOUT := true
 
 # Includes
 TW_INCLUDE_NTFS_3G := true
@@ -156,8 +152,8 @@ TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 TW_EXCLUDE_TWRPAPP := true
 
 # Locale
-#TW_EXTRA_LANGUAGES := true
-#TW_DEFAULT_LANGUAGE := en
+TW_EXTRA_LANGUAGES := true
+TW_DEFAULT_LANGUAGE := en
 
 # Use mke2fs to create ext4 images
 TARGET_USES_MKE2FS := true
@@ -168,10 +164,6 @@ TW_INCLUDE_FBE := true
 TW_INCLUDE_CRYPTO_FBE := true
 PLATFORM_SECURITY_PATCH := 2029-10-31
 PLATFORM_VERSION := 16.1.0
-
-# Add debug flags
-#TARGET_USES_LOGD := true
-#TWRP_INCLUDE_LOGCAT := true
 
 # USB Mounting
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file"
@@ -184,4 +176,4 @@ TARGET_INIT_VENDOR_LIB := libinit_pyxis
 TARGET_RECOVERY_DEVICE_MODULES := libinit_pyxis
 
 # For Version TWRP
-TW_DEVICE_VERSION := 3-pyxis
+TW_DEVICE_VERSION := 4-pyxis
