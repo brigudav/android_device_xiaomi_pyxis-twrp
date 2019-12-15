@@ -33,20 +33,20 @@ Works:
 
 ## Compile
 
-## First checkout minimal twrp with omnirom tree:
+First checkout minimal twrp with omnirom tree:
 
 ```
 repo init -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-9.0
 repo sync
 ```
 
-## Then add these projects to .repo/manifest.xml:
+Then add these projects to .repo/manifest.xml:
 
 ```xml
 <project path="device/xiaomi/pyxis" name="brigudav/android_device_xiaomi_pyxis-twrp" remote="github" revision="master" />
 ```
 
-## Finally execute these:
+Finally execute these:
 
 ```
 . build/envsetup.sh
@@ -54,7 +54,7 @@ lunch omni_pyxis-eng
 mka recoveryimage ALLOW_MISSING_DEPENDENCIES=true # Only if you use minimal twrp tree.
 ```
 
-## Install:
+Install:
 
 ```
 fastboot flash recovery recovery.img
