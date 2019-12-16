@@ -32,9 +32,6 @@ Works:
 - USB OTG
 - Android Pie and Q Support
 - Vibration support
-
-TO-DO:
-
 - DT2W support
 
 ## Compile
